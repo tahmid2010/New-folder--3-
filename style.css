@@ -19,6 +19,37 @@ body{
     color: black
 }
 .topnav a.active{
-    background-color:bisque;
-    color:aquamarine;
+    background-color:rgb(205, 196, 255);
+    color:rgb(127, 129, 255);
 }
+.myslides{
+    height: 300px;
+    width:100%;
+}
+img{
+   width: 100px; 
+}
+.carousel-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 300px;}
+    /* Adjust based on your image height */
+
+
+    /* Hide all slides by default */
+
+    .myslides {
+
+        display: none;
+
+        max-height: 100%;
+        /* Ensure images fit within container */
+
+        max-width: 100%;
+
+    }

@@ -4,14 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 <body>
-    <div class="topnav"></div>
-    <a class="active" href="#">Home</a>
+    
+    <div class="topnav">
+    <a class="active" href="INDEX.HTML">Home</a>
     <a href="#">Highest_rated_Cricket_Player_in_games</a> 
     <a href="#">Cricket_Gaming</a>
-    <a href="#">about_us</a>
-    <link rel="stylesheet" href="style.css">
+    <a href="about.html">about_us</a>
+    </div>
+    <div class="carousel-container">
+    <img class="myslides" src="download (1).jpeg" height="300" width="650" alt="Slide 1">
+    <img class="myslides" src="download.jpeg" height="300" width="650" alt="Slide 2">
+<img class="myslides" src="images.jpeg" height="300" width="650" alt="Slide 3"></div>
+<script>
+var index = 0;
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("myslides");
+        for (i = 0; i < x.length; i++) {
+            ``
+            x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }
+        x[index - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+    }
+    carousel();</script>
 </body>
 </html>
